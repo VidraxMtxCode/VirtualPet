@@ -82,6 +82,12 @@ public class MascotaVirtual {
         anim -= 3;
     }
 
+    // 6. Ballar
+    public void bailar() {
+        System.out.println(this.nom + " está bailando un mambo! 💃🕺");
+        this.energia -= 10;
+    }
+
     // Comprova si la mascota ha mort: algun atribut a 0 o menys, o per sobre de 100
     public boolean haMort() {
         return energia <= MINIM || energia > MAXIM

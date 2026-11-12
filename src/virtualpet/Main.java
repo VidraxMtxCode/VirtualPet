@@ -33,6 +33,7 @@ public class Main {
             System.out.println("3.- Menjar");
             System.out.println("4.- Dutxar");
             System.out.println("5.- Atacar el dummy");
+            System.out.println("6.- Ballar");
             System.out.println("0.- Sortir");
             System.out.println("Tria una opció:");
             opcio = teclat.nextInt();
@@ -66,6 +67,9 @@ public class Main {
                     if (dummy.haMort()) {
                         System.out.println("El dummy s'ha trencat!");
                     }
+                    break;
+                case 6:
+                    mascota.bailar();
                     break;
                 case 0:
                     System.out.println("Sortint de l'aplicació...");
